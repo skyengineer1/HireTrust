@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+div.left-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    padding: 1em;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(185, 185, 185);
+}
+
+p.company-name {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(185, 185, 185);
+}
+
+div.right-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    justify-content: space-around;
+}
+
+button.book {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2em;
+    padding: 0.8em 1em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.book:hover {
+    background-color: white;
+    color: black;
+}
+
+button.sign-up {
+    background-color: white;
+    color: black;
+    padding: 0.8em 1em;
+    border: 1px solid white;
+    border-radius: 2em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sign-up:hover {
+    background-color: black;
+    color: white;
+}
+
+/* SECTION */
+section {
+    width: 100%;
+    height: 20em;
+    background-image: url(images/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3em 0em;
+}
+
+div.job-finder {
+    width: 40em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1.section-header {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+p.section-paragraph {
+    font-size: 1.3em;
+    color: rgb(65, 65, 65);
+}
+
+button.section-button {
+    background-color: black;
+    color: white;
+    padding: 0.8em 2em;
+    border-radius: 2em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.section-button:hover {
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.section-button:active {
+    box-shadow: none;
+}
+
+/* NAVBAR */
+
+nav {
+    padding: 0.1em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+div.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: rgb(185, 185, 185);
+}
+
+.nav-container p {
+    padding: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+p.sales {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p.tatari {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p.vercel {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p.cal {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p.nextdoor {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p.zapier {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 0 10em;
+}
+
+div.top-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(185, 185, 185);
+    padding: 1em;
+}
+
+div.bottom-main {
+    display: flex;
+    flex-direction: column;
+}
+
+div.left-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.5em;
+    padding: 1em;
+}
+
+div.box {
+    border: 1px solid white;
+    padding: 1em;
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+img.box-image {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+div.middle-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+p.title {
+    color: rgb(125, 125, 125);
+    font-size: 1.5em;
+}
+
+p.position {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+p.salary {
+    font-size: 1.5em;
+    color: rgb(125, 125, 125);
+}
+
+button.apply {
+    background-image: url(images/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0.8em 2em;
+    color: black;
+    border-radius: 2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.apply:hover {
+    border: 3px solid black;
+}
+
+.apply:active {
+    border: none;
+}
